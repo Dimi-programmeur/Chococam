@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHOCOCAM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'btn-bg': '#3E3232',
+                        'space': '#443434',
+                        'btn-color': '#DFCECE',
+                        'bg-section5': '#DFCECE30',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+        
+        html {
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body class="font-poppins w-full h-screen">
+
+    <!-- Header -->
+    <header class="w-full flex justify-between items-center px-[28px] py-[10px] max-[950px]:px-[10px]">
+        <a href="#"><img class="max-[950px]:w-[120px] max-[600px]:w-auto" src="./image/logo-chococam 1.svg" alt="logo"></a>
+
+        <ul class="flex gap-[30px] max-[600px]:hidden max-[950px]:gap-[20px]">
+            <li class="list-none"><a class="text-black no-underline text-[20px] max-[950px]:text-[15px] hover:text-green-500" href="#">Accueil</a></li>
+            <li class="list-none"><a class="text-black no-underline text-[20px] max-[950px]:text-[15px] hover:text-green-500" href="#">A propos</a></li>
+            <li class="list-none"><a class="text-black no-underline text-[20px] max-[950px]:text-[15px] hover:text-green-500" href="#">Carrière</a></li>
+            <li class="list-none"><a class="text-black no-underline text-[20px] max-[950px]:text-[15px] hover:text-green-500" href="#">Nous Contacter</a></li>
+        </ul>
+
+        <button class="text-[19px] w-[150px] h-[60px] bg-btn-bg text-btn-color max-[950px]:w-[100px] max-[950px]:h-[50px] max-[950px]:text-[14px] hover:text-space hover:bg-red-200 transition duration-500 hover:translate-y-[-1rem]"><strong>Contact</strong></button>
+    </header>
+
+    <!-- Section 1 -->
+    <section class="flex h-[800px] justify-end max-[600px]:justify-center max-[950px]:h-[250px]">
+        <div class="h-[350px] mr-[50px] max-[600px]:mr-0 max-[600px]:text-center max-[950px]:text-center">
+            <br><br><br><br><br>
+            <h1 class="text-[30px] text-black max-[950px]:ml-[150px] max-[600px]:ml-0">Passion du gout😎! </h1>
+            <br><br>
+            <p class="text-[20px] max-[950px]:text-[1.5rem]">Lorem ipsum dolor sit amet, consectetur adipisi. <br> Sed dolore cum asperiores cupiditate culpa ea <br> tempore, soluta accusantium reiciendis.</p>
+            <br><br><br><br>
+            <button class="bg-btn-bg text-btn-color font-bold h-[45px] w-[280px] text-[15px] max-[950px]:h-[45px] max-[950px]:w-[200px] max-[950px]:text-[14px] max-[950px]:ml-[110px] max-[600px]:ml-0 hover:text-space hover:bg-red-200 transition duration-500 hover:translate-y-[-2rem]">commander un produit</button>
+        </div>
+        <img class="h-[800px] max-[950px]:h-[500px] max-[950px]:w-[1000px] max-[600px]:hidden" src="./image/tetiana-bykovets-7LKpstdOad0-unsplash-removebg-preview 1.svg" alt="cacaouette">
+    </section>
+
+    <!-- Section 2 -->
+    <section class="h-[200px] flex justify-center items-center max-[950px]:hidden">
+        <img class="h-[430px]" src="./image/image 1.svg" alt="cacao">
+        <div class="pl-[100px]">
+            <p class="text-[50px] text-black">Meilleur chocolatier</p>
+            <br><br>
+            <p class="text-[20px]">Lorem Ipsum is simply dummy text of the printing and <br>Lorem Ipsum has been the Lorem Ipsum is <br>simply dummy text of the printing and typesetting. <br>Lorem Ipsum has been the </p>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="w-full h-[250px] flex justify-around items-center text-white bg-space mt-[170px] max-[950px]:flex flex-wrap hover:bg-orange-950">
+        <div class="flex flex-col items-center">
+            <h1 class="text-[50px] hover:text-green-600 max-[950px]:text-[40px]">3 MILLIONS</h1>
+            <p class="text-[20px] max-[950px]:text-[15px]">De consommateur à travers l’afrique</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <h1 class="text-[50px] hover:text-red-600 max-[950px]:text-[40px]">3 MILLIONS</h1>
+            <p class="text-[20px] max-[950px]:text-[15px]">De consommateur à travers l’afrique</p>
+        </div>
+        <div class="max-[950px]:hidden">
+            <h1 class="text-[50px]">3 MILLIONS</h1>
+            <p class="text-[20px]">De consommateur à travers l’afrique</p>
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="mt-[50px] -mb-[250px]">
+        <div class="flex ml-[60px] gap-x-[20rem] max-[950px]:m-[0] gap-x-[1rem] ">
+            <div class="relative bottom-[0px] cursor-pointer">
+                <img class="relative top-[120px] left-[100px] hover:bg-red-600 hover:scale-[1.1] transition duration-1000 rounded-[50%] p-[1.5rem] max-[950px]:top-[16px] max-[950px]:left-[30px]" src="./image/big-gum 1.svg" alt="">
+                <img class="relative bottom-[170px] z-[-1] max-[950px]:hidden" src="./image/Vector.svg" alt="">
+            </div>
+            <div class="relative bottom-[250px] cursor-pointer">
+                <img class="relative top-[350px] left-[100px] hover:bg-orange-900 hover:scale-[1.1] transition duration-1000 rounded-[50%] p-[0] max-[950px]:top-[260px] max-[950px]:left-[1px]" src="./image/tartinat 1.svg" alt="">
+                <img class="relative bottom-[10px] z-[-1] max-[950px]:hidden" src="./image/Vector(1).svg" alt="">
+            </div>
+        </div>
+        <div class="flex ml-[60px] gap-x-[20rem]">
+            <div class="relative bottom-[0px] cursor-pointer">
+                <img class="relative bottom-[180px] left-[150px] hover:bg-blue-700 hover:scale-[1.1] transition duration-1000 rounded-[20%] p-[0] max-[950px]:top-[-110px] max-[950px]:left-[80px]" src="./image/mambo 1.svg" alt="">
+                <img class="relative bottom-[500px] z-[-1] max-[950px]:hidden" src="./image/Vector(2).svg" alt="">
+            </div>
+            <div class="relative bottom-[0px] cursor-pointer">
+                <img class="relative bottom-[120px] left-[55px] hover:bg-yellow-500 hover:scale-[1.1] transition duration-1000 rounded-[50%] p-[0] max-[950px]:hidden" src="./image/images__3_-removebg-preview 1.svg" alt="">
+                <img class="relative bottom-[450px] z-[-1] max-[950px]:hidden" src="./image/Vector(3).svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="px-[270px] py-[160px] flex flex-col gap-[70px] bg-[#DFCECE30] justify-center items-center mb-[400px] max-[950px]:px-[2rem] max-[950px]:mb-[100px] py-[5rem] max-[950px]:gap-[20px] max-[950px]:mt-[20rem]">
+        <div class="border border-space h-[100px] w-[700px] cursor-pointer hover:border-blue-500 hover:border-[3px] max-[950px]:hidden"></div>
+        <div class="flex gap-[45px] cursor-pointer max-[950px]:hidden">
+            <div class="border border-space h-[100px] w-[330px] hover:border-blue-500 hover:border-[3px]"></div>
+            <div class="border border-space h-[100px] w-[330px] hover:border-blue-500 hover:border-[3px]"></div>
+        </div>
+        <div class="border border-space h-[100px] w-[700px] cursor-pointer hover:border-blue-500 hover:border-[3px] max-[950px]:w-[300px]"></div>
+        <button class="h-[100px] w-[500px] font-poppins text-[40px] bg-space flex justify-center items-center text-white gap-x-[1rem] hover:text-space hover:bg-red-200 transition duration-500 max-[700px]:w-[250px] h-[60px] max-[950px]:self-center max-[950px]:text-[30px]">
+            <img src="./image/mail_FILL0_wght400_GRAD0_opsz24 (1) 1.svg" alt=""> Envoyer
+        </button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center bg-space py-[12rem] flex justify-center items-center hover:bg-orange-950 max-[950px]:h-[3rem]">
+        <img class="w-[400px] max-[950px]:h-[6rem]" src="./image/logo-chococam 1.svg" alt="">
+    </footer>
+
+</body>
+</html>
